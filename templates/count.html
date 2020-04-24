@@ -1,0 +1,20 @@
+<button><a href="{% url 'home' %}" type="button"> Start Again</a></button>
+
+<h1>There are {{count}} words in your text</h1>
+
+
+<h1>Your Content:</h1>
+{{fulltext}}
+
+
+<h1>Word Count:</h1>
+
+
+{%  for word,counttotal in worddictionary %}
+
+{{word}} - Appeared {{counttotal}}
+<br>
+
+
+
+{% endfor %}

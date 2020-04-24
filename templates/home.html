@@ -1,0 +1,31 @@
+<h1 style="display: block; text-align: center; margin-top: 100px;">WORDCOUNT</h1>
+
+<div style="display: flex;
+    align-items: center;
+    justify-content: center">
+
+    <form action="{% url 'count' %}">
+
+        <textarea cols="40" rows="10" name="fulltext">
+
+
+
+
+
+    </textarea>
+        <br />
+        <br />
+        <input type="submit" value="Count!" placeholder="count!" />
+    </form>
+
+
+</div>
+<br>
+<br>
+<br>
+
+
+<button style=" margin: 0;
+  position: absolute;
+  top: 74%;
+  left: 53%;"><a href="{% url 'about' %}">About the App</a></button>
